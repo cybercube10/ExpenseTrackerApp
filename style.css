@@ -1,0 +1,308 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  counter-reset: section;
+  
+}
+
+.login{
+  width: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: auto;
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;   /*Login */
+}
+.login h2{
+color: orange;
+}
+.login_content
+{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid orange;
+  padding: 20px;
+  position: relative;
+}
+.login h2{
+  padding: 10px;
+  
+}
+
+.login input{
+  padding: 5px 10px;
+  outline: none;
+  margin: 10px 0;
+}
+
+#signup{
+  border: 1px solid;
+  padding: 10px 15px;
+  background-color:  orange;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s ease-in;
+}
+
+
+
+#signup:hover{
+ background-color: transparent;
+ color: orange;
+}
+
+#signin{
+  border: 1px solid;
+  padding: 10px 15px;
+  background-color:  orange;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s ease-in;
+}
+
+#signin:hover{
+  background-color: transparent;
+  color: orange;
+ }
+
+ #changevisibility{
+  position: absolute;
+  cursor: pointer;
+  width: 20px;
+  right: 2vw;
+  bottom: 8vw;
+ }
+ 
+ 
+#dashboard{
+  width: 100%;
+  height: 100vh;
+  display: none;
+  position: relative;
+  
+}
+
+#personalDetails{
+  width: 40%;
+  height: 40vh;
+  position: absolute;
+  background-color: white;
+  top: 10vw;
+  left: 40vw;
+ display: flex;
+ color: orange;
+ flex-direction: column;
+ border: 2px solid orange;
+}
+
+#personalDetails button{
+ margin: 10px auto;
+ padding: 10px 15px;
+}
+
+
+
+#imagePreview{
+  width: 100px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: white;
+  display: inline;
+}
+
+#menu{
+  width: 20vw;
+ padding: 20px 30px;
+ background-color: orange;
+ position: fixed;
+}
+h2{
+  text-align: center;
+}
+li{
+  
+  padding: 40px 40px;
+  transition: all 0.4s;
+}
+hr{
+  color: white;
+}
+li:hover{
+  background-color: rgb(221, 152, 25);
+  cursor: pointer;
+  border-radius: 10px;
+}
+a{
+  color: black;
+}
+
+#content{
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  margin-left: 22vw;
+ 
+  
+}
+
+#top{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+
+#top div{
+  padding: 10px;
+  width: 200px;
+  aspect-ratio: 2;
+  background-color: orange;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+}
+
+#pfp{
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-image: url("https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") ;
+  background-position: center;
+  background-size: cover;
+}
+
+#bottom{
+  display: flex;
+  flex-direction: column;
+ 
+  margin-right: 20px;
+}
+
+#graph{
+  height: 60vh;
+
+}
+
+#goals{
+  height: 40vh;
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+#goals  div{
+  padding: 10px;
+  width: 200px;
+  height: 100px;
+  background-color: orange;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+
+}
+
+#BalanceSheet{
+
+   width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+   height: 100vh;
+   display: none; 
+   flex-direction: column;
+  
+  
+}
+#BalanceSheet h1{
+  color: orange;
+  text-align: center;
+}
+
+#balanceContent{
+  
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid orange;
+  padding: 20px;
+  height: 40vh;
+ 
+  
+}
+#balanceContent input{
+margin-bottom: 30px;
+padding: 10px 15px;
+outline: none;
+}
+
+select{
+  padding: 10px 15px;
+}
+
+#addBtn{
+  margin: 10px auto;
+  padding: 10px 15px;
+  background-color:  orange;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s ease-in;
+  border: 1px solid ;
+}
+
+#addBtn:hover{
+  background-color: white;
+  color: orange;
+}
+
+#histBtn{
+  margin: 10px auto;
+  padding: 10px 15px;
+  background-color:  orange;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s ease-in;
+  border: 1px solid ;
+}
+
+#histBtn:hover{
+  background-color: white;
+  color: orange;
+}
+
+
+
+#fileImg{
+  display: none;
+}
+label{
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 70px;
+  margin: auto;
+  background-color: orange;
+  border-radius: 50%;
+}
+

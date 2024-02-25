@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExpenseTrackerApp</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+  
+    <div class="login">
+      <div class="login_content">
+        <h2>SignUp/SignIn</h2>
+      <input type="text" id="email" placeholder="enter email" autocomplete="off">
+      <div id="changevisibility"><i class="ri-lock-line"></i></div>
+      <input type="text" id="password" placeholder="enter Password"> 
+      <button id="signup">SignUp</button>
+      <button id="signin">SignIn</button>
+      </div>
+    </div>
+    
+
+
+    
+  <div id="dashboard">
+    <div id="personalDetails">
+     <h2>Your Personal Details </h2>
+     <input type="file" id="fileImg" onchange="getfile(event)" accept="image/png , image/jpeg">
+     <label for="fileImg">+</label>
+     <span class="fileText"></span>
+     <button onclick="uploadImg(fileItem, fileName)">Upload Image</button>
+     
+    </div>
+    <div id="menu">
+      <h2>ExpenseTracker</h2>
+      <hr>
+      <li><a href="#dashboard">Dashboard</a><i class="ri-dashboard-line"></i></li>
+      <li><a href="#BalanceSheet">Expenses</a><i class="ri-list-view"></i></li>
+      <li><a href="#">Analysis</a><i class="ri-line-chart-line"></i></li>
+      <li><a href="#" id="logout">Logout</a><i class="ri-logout-box-line"></i></li>
+      <li id="setPfP"><div id="pfp"></div>User xyz</li>
+    </div>
+    <div id="content">
+      <div id="top">
+        <div>Total Expenses <h1>20000</h1></div>
+        <div>This Month <h1>14000</h1></div>
+        <div>Today <h1>300</h1></div>
+      </div>
+      <div id="bottom">
+        <div  id="graph"></div>
+        <div id="goals">
+          <div>Total Balance <h1>25000</h1></div>
+          <div>Saving Goal <h1>5000</h1></div>
+        </div>
+      </div>
+    </div>
+   </div> 
+
+   <div id="BalanceSheet">
+    <h1>Add your Daily Expenses</h1>
+   <div id="balanceContent">
+
+   
+    <input type="number" id="totalBalance" placeholder="enter total Balance in rs" >
+
+    <input type="number" id="expenseName" placeholder="enter your expense in rs">
+    <select id="expenseType">
+      <option value="none"></option>
+      <option value="Stationary">Stationary</option>
+      <option value="Groceries">Groceries</option>
+      <option value="Food">Food</option>
+      <option value="Travel">Travel</option>
+      <option value="Entertainment">Entertainment</option>
+      <option value="Miscc">Miscc.</option>
+    </select>
+   
+    <button id="addBtn">Add</button>
+
+
+   </div>
+   <button id="histBtn">See History</button>
+   </div>
+
+<script type="module" src="budget.js" defer></script>
+</body>
+</html>
+ 
